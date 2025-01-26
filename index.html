@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <i class="fa-solid fa-bars " id='open' onclick="opensidebar()"></i>
+    
+    <div class="sidebar" id="sidebar">
+    
+      
+        <i class="fa-solid fa-circle-xmark cross " onclick="closesidebar()"></i>
+        <hr>
+       
+        <div class="item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <a href="#" class="text">Settting</a>
+            
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-gauge"></i>
+            <a href="#" class="text">Dashboard</a>
+        </div>
+        <div class="item">
+            <i class="fa-regular fa-bell"></i>
+            <a href="#" class="text">Notifications</a>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-calendar-days"></i>
+            <a href="#" class="text">Calendar</a>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-users"></i>
+            <a href="#" class="text">Team</a>
+        </div>
+         <div class="menu-item1"><hr><br>
+            <i class="fa-regular fa-circle-user"></i>
+            <a href="#" class="text">Profile</a>
+            <hr>
+        </div>
+        <div class="item2">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <a href="#" class="text">logout</a>
+            
+        </div>
+       <hr>
+
+    </div>
+    <script src="https://kit.fontawesome.com/f09217f04e.js" crossorigin="anonymous"  >
+
+    </script>
+    <script>
+        function opensidebar()
+        {
+            const sidebarelement = document.getElementById("sidebar");
+            sidebarelement.style.visibility='visible';
+            const helem = document.getElementById("open");
+            helem.style.visibility='hidden';
+        }
+        function closesidebar()
+        {
+            const sidebarelement = document.getElementById("sidebar");
+            sidebarelement.style.visibility='hidden';
+            const helem = document.getElementById("open");
+            helem.style.visibility='visible';
+        }
+    </script>
+</body>
+</html>
